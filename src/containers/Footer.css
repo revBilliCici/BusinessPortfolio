@@ -1,0 +1,74 @@
+.Footer__Section-Head h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 32px;
+  /* identical to box height */
+
+  letter-spacing: -0.06em;
+  color: #313131;
+}
+
+.Footer__Section-Head p {
+  font-family: sans-serif;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #828282;
+}
+
+.Footer__icon {
+  border: 1px solid #313131;
+  box-sizing: border-box;
+}
+
+.Footer__icon:hover {
+  background-color: #313131;
+}
+
+.IconsFa {
+  color: #313131;
+}
+
+.Footer__icon:hover .IconsFa {
+  color: #f6f6f6;
+}
+
+.Footer__Section-Links h3 {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #313131;
+}
+
+.Footer__Section-Links p {
+  font-family: sans-serif;
+  font-weight: 450;
+  font-size: 22px;
+  line-height: 100%;
+  /* identical to box height, or 22px */
+
+  color: #828282;
+}
+
+.Footer__Section-Links p:hover {
+  color: #313131;
+}
+
+.Footer__Secondary {
+  background: #f78430;
+  min-height: 40px;
+}
+
+.Footer__Secondary p {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+  text-align: center;
+  color: #fafafa;
+}

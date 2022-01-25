@@ -1,0 +1,38 @@
+.Portfolio_Card {
+  border-left: 4px #f78430 solid;
+}
+
+.Portfolio_Card div h3 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 100%;
+  color: #313131;
+}
+
+.Portfolio_Card div p {
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 130%;
+  color: #828282;
+}
+
+.Portfolio__Image {
+  position: relative;
+}
+
+.Portfolio__Image img {
+  width: 75%;
+  position: relative;
+  z-index: 100;
+}
+
+.Image__Background--Portfolio {
+  background: #f78430;
+  border: 1px solid #f78430;
+  box-sizing: border-box;
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  bottom: -10%;
+  right: 1%;
+}

@@ -1,0 +1,54 @@
+.Navbar__Logo,
+.NavName {
+  color: #313131;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.Navbar__navlink {
+  font-weight: 450;
+  font-size: 17px;
+  line-height: 22px;
+  color: #313131;
+  cursor: pointer;
+}
+
+.Navbar__navlink-modified {
+  font-size: 24px;
+}
+
+.Navbar__Login {
+  font-weight: 450;
+  font-size: 17px;
+  line-height: 22px;
+  color: #313131;
+  cursor: pointer;
+}
+
+.Navbar__Signup {
+  border-radius: 50px;
+  background-color: #fff;
+  transition: background 0.3s;
+  cursor: pointer;
+  border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  box-shadow: 0px 30px 30px rgba(99, 122, 166, 0.1);
+}
+
+.Navbar__Signup p {
+  padding: 15px 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #313131;
+}
+
+.Navbar__Signup:hover {
+  background-color: #313131;
+}

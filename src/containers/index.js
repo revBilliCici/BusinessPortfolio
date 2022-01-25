@@ -1,0 +1,9 @@
+export { default as SignIn } from "./SignIn";
+export { default as SignUp } from "./SignUp";
+export { default as Header } from "./Header";
+export { default as Services } from "./Services";
+export { default as HowItWorks } from "./HowItWorks";
+export { default as Portfolio } from "./Portfolio";
+export { default as Testimonials } from "./Testimonials";
+export { default as Blogs } from "./Blogs";
+export { default as Footer } from "./Footer";

@@ -1,0 +1,60 @@
+.Blog__Post {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.Post__Label-New {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+  color: #313131;
+  position: absolute;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78px;
+  width: 105px;
+  background: #fafafa;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.Post__Preview {
+  background: #fafafa;
+  backdrop-filter: blur(40px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+
+  position: absolute;
+  bottom: 20px;
+}
+
+.Preview__Title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  /* or 20px */
+
+  color: #313131;
+}
+
+.Preview__Description {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 100%;
+  /* or 16px */
+  color: #828282;
+}
+
+.Preview__Link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+  color: #313131;
+}

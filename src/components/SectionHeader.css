@@ -1,0 +1,23 @@
+.Section__Header h2 {
+  font-family: sans-serif;
+  font-weight: 450;
+  font-size: 65px;
+  /* or 53px */
+  letter-spacing: -0.06em;
+  color: #313131;
+}
+
+hr {
+  border: none;
+  background: #f78430;
+  height: 2px;
+}
+
+.Section__Header p {
+  font-family: sans-serif;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #828282;
+}
