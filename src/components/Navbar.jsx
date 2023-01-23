@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaUser } from "react-icons/fa";
 import "./Navbar.css";
 
-const Navbar = ({ urlLocation, isLoggedIn, NavName, isScrolled }) => {
+const Navbar = ({ urlLocation, isLoggedIn, NavName, isScrolled, onLogout }) => {
   const [ToggledMenu, setToggledMenu] = useState(false);
   let isDisabled = "";
   if (urlLocation != "/") {
@@ -36,6 +36,7 @@ const Navbar = ({ urlLocation, isLoggedIn, NavName, isScrolled }) => {
               {isLoggedIn ? (
                 <div className="border-gray-900 border rounded-full p-3 text-3xl">
                   <FaUser />
+                  <button onClick={onLogout}>Logout</button>
                 </div>
               ) : (
                 <>{ToggledMenu ? <FaTimes /> : <FaBars />}</>
@@ -72,6 +73,7 @@ const Navbar = ({ urlLocation, isLoggedIn, NavName, isScrolled }) => {
                   <p className="NavName">{NavName}</p>
                   <div className="border-gray-900 border rounded-full p-3 text-3xl">
                     <FaUser />
+                  <button onClick={onLogout}>Logout</button>
                   </div>
                 </div>
               ) : (

@@ -110,6 +110,11 @@ const App = () => {
       return;
     }
   };
+  const handleLogout = () => {
+    localStorage.removeItem("Token")
+    localStorage.removeItem("Fullname")
+    setToken(undefined)
+  }
 
   setTimeout(() => {
     setLoaded(true);
@@ -132,6 +137,7 @@ const App = () => {
             isLoggedIn={Token}
             NavName={NavbarName}
             isScrolled={isScrolledNav}
+            onLogout={handleLogout}
           />
           <div className={isScrolledNav ? "mt-52" : ""}></div>
           <Routes>
