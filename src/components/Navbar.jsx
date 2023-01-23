@@ -34,14 +34,16 @@ const Navbar = ({ urlLocation, isLoggedIn, NavName, isScrolled, onLogout }) => {
               }}
             >
               {isLoggedIn ? (
-                <div className="border-gray-900 border rounded-full p-3 text-3xl">
-                  <FaUser />
-                  <button onClick={onLogout}>Logout</button>
-                </div>
+                
+                  <div className="border-gray-900 border rounded-full p-3 text-3xl">
+                    <FaUser />
+                  </div>
+               
               ) : (
                 <>{ToggledMenu ? <FaTimes /> : <FaBars />}</>
               )}
             </div>
+            {isLoggedIn && <button className="border border-4 p-2 text-lg border-black" onClick={onLogout}>Logout</button>}
             <div className="lg:flex gap-8 hidden">
               <Link
                 to={"/"}
@@ -73,8 +75,8 @@ const Navbar = ({ urlLocation, isLoggedIn, NavName, isScrolled, onLogout }) => {
                   <p className="NavName">{NavName}</p>
                   <div className="border-gray-900 border rounded-full p-3 text-3xl">
                     <FaUser />
-                  <button onClick={onLogout}>Logout</button>
                   </div>
+                  <button className="border border-4 p-2 text-lg border-black" onClick={onLogout}>Logout</button>
                 </div>
               ) : (
                 <>
@@ -97,6 +99,7 @@ const Navbar = ({ urlLocation, isLoggedIn, NavName, isScrolled, onLogout }) => {
                 <p className="Navbar__navlink-modified select-none border-b-orange-500 border-b pb-2 mb-5 self-center">
                   {NavName}
                 </p>
+                
                 <Link
                   to={"/"}
                   className="Navbar__navlink hover:text-orange-400 select-none border-b-orange-500 border-b pb-2"
