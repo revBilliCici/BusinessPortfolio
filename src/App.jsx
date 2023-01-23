@@ -4,7 +4,6 @@ import {
   Routes,
   useNavigate,
   useLocation,
-  Link,
 } from "react-router-dom";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { TailSpin } from "react-loader-spinner";
@@ -28,7 +27,7 @@ const users = [
     firstName: "Jameel",
     lastName: "Ahmed",
     userName: "jameel",
-    email: "JameelAlawat99@gmail.com",
+    email: "Jameel99@gmail.com",
     password: "test1234",
     dateofBirth: "25-1-1999",
     profilePicture: undefined,
@@ -83,7 +82,7 @@ const App = () => {
     users.forEach((u) => {
       if (user.userName != u.userName) {
         users.push({ id: users.length + 1, ...user });
-        console.log("User Registered");
+        window.alert("User Registered");
         navigate("/login");
         return true;
       }
@@ -98,7 +97,7 @@ const App = () => {
     });
 
     if (isUser != []) {
-      let token = `Tokenize${isUser[0].id}${isUser[0].userName}${isUser[0].firstName}${isUser[0].lastName}${isUser[0].dateofBirth}`;
+      let token = `Token${isUser[0].id}${isUser[0].userName}${isUser[0].firstName}${isUser[0].lastName}${isUser[0].dateofBirth}`;
       setToken(token);
       localStorage.setItem("Token", token);
       localStorage.setItem(
@@ -107,7 +106,8 @@ const App = () => {
       );
       setNavbarName(`${isUser[0].firstName} ${isUser[0].lastName}`);
     } else {
-      return "user not Found";
+      window.alert("user not found")
+      return;
     }
   };
 
