@@ -106,8 +106,7 @@ const App = () => {
       );
       setNavbarName(`${isUser[0].firstName} ${isUser[0].lastName}`);
     } else {
-      window.alert("user not found")
-      return;
+      return "user not found"
     }
   };
   const handleLogout = () => {
